@@ -1,0 +1,517 @@
+@font-face {
+    font-family: "Myriad Pro"; 
+    src: url(fonts/8143.otf);
+}
+@font-face {
+    font-family: "DalaFlod";
+    src: url(fonts/dala-floda-medium.ttf);
+}
+@font-face {
+    font-family: "DalaMoaLight";
+    src: url(fonts/DalaMoa-Light.ttf);
+}
+@font-face {
+    font-family: "Futura";
+    src: url("fonts/FuturaBookBT.ttf");
+}
+main{
+    background: #f6f6f6;
+    color: black;
+    padding-bottom: 100px;
+}
+.page-max{
+    width: 100%;
+}
+.page{
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+}
+.wrapper-baner{
+    position: relative;
+    overflow: hidden;
+    top: -220px;
+    margin-bottom:-160px;
+}
+.wrapper-baner img{
+    width: 100%;
+    -webkit-clip-path: polygon(0 57%, 100% 20%, 100% 59%, 0 100%);
+    clip-path: polygon(0 57%, 100% 20%, 100% 59%, 0 100%);
+}
+.baner__text{
+    position: relative;
+    color: #fbfafa;
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    position: absolute;
+    bottom: 236px;
+    left: 171px;
+    text-transform: uppercase;
+}
+.baner__text p:nth-child(1)::after{
+    content: " ";
+    position: absolute;
+    width: 42px;
+    height: 1px;
+    background-color: #fbfafa;
+    z-index: 2;
+    left: 0;
+    top: -26px;
+}
+.mission-header{
+    display: grid;
+    grid-template-columns: 36% 36%;
+    justify-content: center;
+    grid-column-gap: 135px;
+}
+.mission-header p{
+    font-family: "Futura";
+    font-size: 21px;
+    line-height: 31px;
+}
+h1{
+    font-family: "DalaFlod";
+    font-size: 58px;
+    position: relative;
+}
+h1:after{
+    position: absolute;
+    content:" ";
+    width: 2px;
+    height: 155px;
+    background-color:black;
+    z-index: 2;
+    left: 0;
+    top: -26px;
+    transform: rotate(27deg);
+}
+.wrapper-mission{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.mission-content{
+    width: 40%;
+    margin-bottom: 50px;
+}
+.mission-content img{
+    transform: rotate(3deg);
+    border: 25px solid #f1f1e9;
+    width: 100%;
+}
+.mission-content-text {
+    width: 70%;
+    line-height:31px;
+}
+.mission-content-text p:nth-child(1){
+    font-family: "DalaFlod"; 
+    font-size: 20px;
+    margin: 40px 0;
+}
+.mission-content-text p:nth-child(2){
+    font-family: "Futura";
+    font-size: 21px;
+}
+.mission__second{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    position: relative;
+    top: 145px;
+}
+.mission__second .mission-content-text{
+    align-self: flex-end;
+}
+.mission__second img{
+    transform: rotate(-1deg);
+}
+.mission__third{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.mission__third img{
+    transform: rotate(-3deg);
+    width: 100%;
+    border: 25px solid #f1f1e9;
+}
+.mission__third .mission-content-text{
+    align-self: center;
+    margin: 100px 0 0 130px;
+    width: 31%;
+}
+.video-conteiner{
+    position: relative;
+    margin: 100px 0;
+    text-align: center;
+}
+.video-conteiner > img{
+    width: 100%;
+}
+.video-conteiner-text{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.video-conteiner-text img{
+    display: block;
+    margin: auto;
+}
+.video-conteiner-text img:nth-child(2){
+    margin-top: 30px;
+    display: inline-block;
+}
+.rings__title{
+    text-align: center;
+    width: 67%;
+    margin: auto;
+}
+.rings__title h2{
+    font-size: 58px;
+    font-family: "DalaFlod";
+    margin-bottom: 50px;
+}
+.rings__title p{
+    font-size: 21px;
+    line-height: 43px;
+    font-family: "Futura";
+    color: #807f7b;
+}
+.rings__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+.rings_block{
+    width: 65%;
+    text-align: center;
+    margin: auto;
+}
+.rings_block img{
+    width: 100%;
+}
+.rings_block :nth-child(2){
+    font-size: 19px;
+    font-family: "Futura";
+    margin-bottom:  30px;
+}
+.rings_block :nth-child(3){
+    font-size: 15px;
+    color: #807f7b;
+    font-family: "Futura";
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid #807f7b;
+    padding-bottom: 15px;
+}
+.rings__btn{
+    border: 1px solid black;
+    width: 350px;
+    margin: 75px auto;
+    text-align: center;
+}
+.rings__btn a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Futura";
+}
+
+@media all and (max-width: 1440px){
+    .wrapper-baner {
+        top: -160px;
+    }
+    .wrapper-baner {
+        margin-bottom: -85px;
+    }
+    .baner__text{
+        bottom: 141px;
+        left: 112px;
+    }.mission-content{
+        width: 35%;
+    }
+    .mission-content-third{
+        width: 30%;
+    }
+}
+@media all and (max-width: 1285px){
+    .wrapper-baner {
+        top: -120px;
+    }
+    .wrapper-baner {
+        margin-bottom: -85px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    h1:after {
+        height: 115px;
+        left: 7px;
+    }
+    .rings__title h2 {
+        font-size: 45px;
+    }
+    .rings_block :nth-child(2) {
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 1130px){
+    .baner__text{
+        bottom: 141px;
+        left: 112px;
+    }
+}
+@media all and (max-width: 1024px){
+    .wrapper-baner {
+        top: -90px;
+    }
+    .wrapper-baner {
+        margin-bottom: -50px;
+    }
+    .baner__text {
+        bottom: 122px;
+        left: 78px;
+    }
+    .mission-header p {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h1:after {
+        height: 108px;
+        left: 6px;
+    }
+    .mission-content-text p:nth-child(2) {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .video-conteiner {
+        margin: 50px 0;
+    }
+    .rings__title h2 {
+        font-size: 40px;
+    }
+    .rings__title h2 {
+        margin-bottom: 30px;
+    }
+    .rings__title p {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .rings_block :nth-child(2) {
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 768px){
+    .baner__text {
+        bottom: 94px;
+        left: 53px;
+        font-size: 14px;
+    }
+    .baner__text p:nth-child(1)::after {
+        width: 30px;
+        top: -18px;
+    }
+    .mission-header {
+        display: grid;
+        grid-template-columns: 70%;
+        justify-content: center;
+        grid-gap: 30px;
+    }
+    .mission-header {
+        grid-column-gap: 58px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h1:after {
+        height: 49px;
+        left: 9px;
+        top: -16px;
+    }
+    .mission-header p {
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .wrapper-mission {
+        display: flex;
+        flex-direction: column;
+    }
+    .mission-content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .mission-content__img{
+        width: 35%;
+        margin-right: 85px;
+    }
+    .mission-content-text{
+        width: 40%;
+        align-self: center;
+    }
+    .mission__second {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        position: static;
+    }
+    .mission__third .mission-content-text {
+        align-self: center;
+        margin: 0;
+    }
+    .mission-content-text p:nth-child(1) {
+        margin: 20px 0;
+    }
+    .rings__title h2 {
+        font-size: 30px;
+    }
+    .rings__title p {
+        line-height: 18px;
+    }
+    main{
+        padding-bottom: 50px;
+    }
+    .video-conteiner-text img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .video-conteiner-text a img{
+        width: 20%;
+    }
+}
+@media all and (max-width: 480px){
+    .wrapper-baner {
+        top: -40px;
+    }
+    .wrapper-baner {
+        margin-bottom: -20px;
+    }
+    .baner__text {
+        bottom: 94px;
+        left: 53px;
+        font-size: 14px;
+    }
+    .baner__text p:nth-child(1)::after {
+        width: 30px;
+        top: -18px;
+    }
+    .mission-header {
+        text-align: center;
+    }
+    .mission-header {
+        grid-column-gap: 58px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h1:after {
+        height: 46px;
+        left: 38px;
+        top: -11px;
+    }
+    .mission-header p {
+        font-size: 14px;
+    }
+    .wrapper-mission {
+        display: flex;
+        flex-direction: column;
+    }
+    .mission-content{
+        flex-direction: column;
+    }
+    .mission-content__img{
+        align-self: center;
+    }
+    .mission-content-text{
+        width: 60%;
+        text-align: center;
+    }
+    .mission-content-text p:nth-child(2) {
+        font-size: 14px;
+    }
+    .mission__second {
+        flex-direction: column;
+    }
+    .mission__third{
+        flex-direction: column;
+    }
+    .mission__second .mission-content-text {
+        align-self: center;
+    }
+    .mission__third .mission-content-text {
+        width: 60%;
+    }
+    .rings__title h2 {
+        font-size: 25px;
+    }
+    .rings__title p {
+        line-height: 14px;
+        line-height: 18px;
+    }
+    main{
+        padding-bottom: 30px;
+    }
+    .rings__btn {
+        width: 300px;
+    }
+}
+@media all and (max-width: 320px){
+    .baner__text {
+        bottom: 37px;
+        left: 28px;
+        font-size: 7px;
+    }
+    .baner__text p:nth-child(1)::after {
+        width: 15px;
+        top: -10px;
+    }
+    h1:after {
+        height: 32px;
+        left: 26px;
+        top: -6px;
+    }
+    .mission-content img {
+        border: 10px solid #f1f1e9;
+    }
+    .mission-content__img {
+        width: 60%;
+        margin: auto;
+    }
+    .mission-content img {
+        transform: rotate(0deg);
+    }
+    .mission-content-text p:nth-child(1) {
+        margin: 10px 0;
+    }
+    .mission__third img {
+        transform: rotate(0deg);
+        border: 10px solid #f1f1e9;
+    }
+    .mission__third {
+        margin-bottom: 20px;
+    }
+    .rings__title p {
+        font-size: 14px;
+    }
+    .rings__btn {
+        width: 250px;
+    }
+}
